@@ -1,0 +1,6 @@
+1. npm install -g typescript
+2. tsc file.ts file.js (or file name is same) tsc file.ts
+3. tsc file.ts -w
+4. tsc --init (create tsconfig.json file)   
+        => "rootDir" = "./src"
+        => "outDir" = "./public"

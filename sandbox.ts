@@ -1,59 +1,30 @@
-// explicit types
-let character: string;
-let age: number;
-let isLoggedIn: boolean;
+let age: any = 25;
 
-// age = 'luigi';
-age = 30;
+age = true;
+console.log(age);
+age = 'hello';
+console.log(age);
+age = {name: 'luigi'};
+console.log(age);
 
+let mixed: any[] = [];
 
-// arrays
-let ninjas: string[] = [];
-
-ninjas.push('shaun');
-
-
-
-// union types
-let mixed: ( string | number | boolean )[] = [];
-
-mixed.push('hello');
-mixed.push(20);
+mixed.push(5);
+mixed.push('mario');
 mixed.push(false);
-
 console.log(mixed);
 
-let uid: string | number;
+let ninja : { 
+    name: any, 
+    age: any 
+};
 
-uid = '123';
-uid = 123;
-
-
-
-// objects
-let ninjaOne: object;
-
-ninjaOne = { name : 'yoshi', age : 30 };
-// ninjaOne = '';
-// ninjaOne = [] (accept because array is object)
-
-let ninjaTwo: {
-    name: string,
-    age: number,
-    beltColour: string
+ninja = {
+    name : 'yoshi',
+    age : 25
 }
 
-ninjaTwo = {
-    name : 'mario',
-    age : 20,
-    beltColour : 'black',
-    // skills : []
-}
-
-
-
-
-
+console.log(ninja);
 
 
 // 1. npm install -g typescript 

@@ -1,11 +1,22 @@
-const character = 'mario';
+let character = 'mario';
+let age = 30;
+let isBlackBelt = false;
 
-console.log(character);
+// character = 20;
+character = 'luigi';
 
-const inputs = document.querySelectorAll('input');
+// age = 'yoshi'
+age = 40;
 
-console.log(inputs);
+// isBlackBelt = 'yes';
+isBlackBelt = true;
 
-inputs.forEach(input => {
-    console.log(input);
-})
+const circ = (diameter: number) => {
+    return diameter * Math.PI;
+}
+
+console.log(circ(2));
+
+// 1. npm install -g typescript 
+// 2. tsc file.ts file.js (or if file names are the same) tsc file.ts
+// 3. tsc file.ts -w

@@ -1,33 +1,32 @@
+// explicit types
+var character;
+var age;
+var isLoggedIn;
+// age = 'luigi';
+age = 30;
 // arrays
-var names = ['luigi', 'mario', 'yoshi'];
-names.push('toad');
-// names.push(3);
-// names[0] = 3;
-var array = [];
-var numbers = [10, 20, 30, 40];
-numbers.push(25);
-numbers.push('shaun');
-numbers[1] = 'shaun';
-console.log(numbers[1]);
-var mixed = ['ken', 4, 'chun-li', 8, 9];
-mixed.push('ryu');
-mixed.push(10);
-mixed[0] = 3;
-//objects
-var ninja = {
+var ninjas = [];
+ninjas.push('shaun');
+// union types
+var mixed = [];
+mixed.push('hello');
+mixed.push(20);
+mixed.push(false);
+console.log(mixed);
+var uid;
+uid = '123';
+uid = 123;
+// objects
+var ninjaOne;
+ninjaOne = { name: 'yoshi', age: 30 };
+// ninjaOne = '';
+// ninjaOne = [] (accept because array is object)
+var ninjaTwo;
+ninjaTwo = {
     name: 'mario',
-    belt: 'black',
-    age: 30
-};
-ninja.age = 40;
-ninja.name = 'ryu';
-// ninja.age = '30';
-// ninja.skills = ['fighting', 'sneaking'];
-ninja = {
-    name: 'yoshi',
-    belt: 'orange',
-    age: 40,
-    // skills: ['fighting', ]
+    age: 20,
+    beltColour: 'black',
+    // skills : []
 };
 // 1. npm install -g typescript 
 // 2. tsc file.ts file.js (or if file names are the same) tsc file.ts
